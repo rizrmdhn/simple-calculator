@@ -8,22 +8,31 @@
     display: flex;
     /* properti pendukung */
     flex-direction: column;
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
     text-align: right;
+    background-color: #555353;
  }
  .flex-container-row {
     display: flex;
+    margin-top: 5px;
  }
  .button {
     flex-basis: 25%;
     /* properti pendukung */
-    font-size: 1.5em;
-    text-align: center;
-    padding: 40px;
-    border: 1px solid black;
-    background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+    height: 90px;
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    font-family: Arial;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 35px;
+    background: #050707;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
     cursor: pointer;
+    margin-right: 5px;
  }
  #zero {
     flex-basis: 50%;
@@ -32,9 +41,14 @@
     flex-basis: 50%;
     background: rgb(197, 6, 6);
  }
- .display {
+ #display {
+   width: 100%;
+   margin-top: 10px;
+ }
+ #screen {
     color: white;
     width: 100%;
+    height: 75px;
     padding: 10px 20px;
     background-color: #333333;
     border: 1px solid black;
@@ -43,7 +57,7 @@
  .operator,
  .negative,
  .equals {
-    background: orange;
+    background: rgb(109, 109, 109);
  }
  .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -52,7 +66,8 @@
     margin-top: 20px;
  }
  .button:hover {
-    font-weight: bold;
+   background: #b9b8b8;
+   text-decoration: none;
  }
  .history {
     width: 80%;
